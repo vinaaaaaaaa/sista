@@ -1,0 +1,32 @@
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    padding-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: .25rem;
+}
+.breadcrumbs.breadcrumb-items {
+    padding-left: .5rem;
+}
+.breadcrumb-item.active {
+    color: #000000;
+}
+.breadcrumbs.breadcrumb-items::before {
+    display: inline-block;
+    color: #6c757d;
+    content: "|";
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 0!important;
+}
+
+.flex-ends {
+    display: flex;
+    justify-content: flex-end;
+}
+.pad-custom {
+    padding-right: 23px;
+    /* padding-top: 130px; */
+}
